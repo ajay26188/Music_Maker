@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Maker</title>
+    <script src="music-maker.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Music Maker</h1>
+    <button id="play">Play</button>
+    <input type="file" id="input-sample" name="input-sample" accept="audio/*">
+    <button id="upload">Add new sample</button>
+    <button id="record">Record</button>
+    <button id="save">Save Recording</button>
+    <audio id="microphone-input"></audio>
+    <br>
+    
+    <div id="trackOptionsContainer">
+        <input type="radio" id="track1" name="track" value="0" checked>
+        <label for="track1">Track 1</label>
+        <input type="range" id="track1Volume" min="0" max="1" step="0.01" value="1">
+        <br>
+    
+        <input type="radio" id="track2" name="track" value="1">
+        <label for="track2">Track 2</label>
+        <input type="range" id="track2Volume" min="0" max="1" step="0.01" value="1">
+        <br>
+    
+        <input type="radio" id="track3" name="track" value="2">
+        <label for="track3">Track 3</label>
+        <input type="range" id="track3Volume" min="0" max="1" step="0.01" value="1">
+        <br>   
+
+        <input type="radio" id="track4" name="track" value="3">
+        <label for="track4">Track 4</label>
+        <input type="range" id="track4Volume" min="0" max="1" step="0.01" value="1">
+        <br>
+
+    </div>
+    
+    
+
+    <!-- Adding select box for instrument categories-->
+    <label for = "categorySelect">Select Instruments Category:</label>
+    <select id = "categorySelect"></select>
+
+    <div id="addButtons"></div>
+
+    <div id="tracks"></div>
+
+    <div class="snowflake">*</div>
+    <br>
+
+    <button id="addTrackButton">Add New Track</button>
+    
+</body>
+</html>
